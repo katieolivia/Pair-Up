@@ -1,3 +1,21 @@
-<p>
-  add-names works!
-</p>
+<div>
+  <input 
+    type="text"
+    class="form-control"
+    [(ngModel)]="name"
+    />
+  <button
+    class="btn btn-primary"
+    (click)="onAddStudentToList(name)">Add Student
+  </button>
+  <hr>
+  <div *ngIf="students.length>0; else emptyList">
+    <ul *ngFor="let student of students">
+      <li>{{ student }}</li>
+    </ul>
+  </div>
+  <ng-template #emptyList>
+    <p>Student names will appear here</p>
+  </ng-template>
+
+</div>

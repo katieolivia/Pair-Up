@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-names.component.css']
 })
 export class AddNamesComponent implements OnInit {
-
+  students = [];
   constructor() { }
 
   ngOnInit() {
+  }
+  onAddStudentToList(student) {
+    this.students.push(student);
+    console.log(this.students);
   }
 
 }
