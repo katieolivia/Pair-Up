@@ -13,7 +13,6 @@ export class AddNamesComponent implements OnInit {
   }
   onAddStudentToList(student) {
     this.students.push(student);
-    console.log(this.students);
   }
 
 }

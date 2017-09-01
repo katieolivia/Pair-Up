@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AddNamesComponent } from '../add-names/add-names.component';
+
 
 @Component({
   selector: 'app-display-names',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-names.component.css']
 })
 export class DisplayNamesComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
